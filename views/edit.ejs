@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+<h1>
+    Here you can edit student records.
+</h1>
+<form action="/allstudents" method="POST">
+        
+    <div class="form-group mt-2">
+        <input class="form-control" type="text" name="fName" value="">
+        <input class="form-control mt-2" type="text" name="mName" placeholder=" Middle Name,">
+        <input class="form-control mt-2" type="text" name="lName" placeholder="Last Name,">
+        <input class="form-control mt-2" type="email" name="email" placeholder="and Email!">
+        <button class="form-control mt-2 btn btn-primary" type="submit">Sign Up</button>
+    </div>
+</form>
+<% include partials/footer.ejs %>

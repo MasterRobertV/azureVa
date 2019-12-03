@@ -1,0 +1,57 @@
+<% include partials/header %>
+        <div id="mainContent" class="container d-flex align-items-center">
+          <div class="card mx-auto infoGet" id="infoCard">
+            <div class="card-body text-center mainNav text-white rounded py-5">
+              <h4 class="card-title">Welcome To The V.A. School</h4>
+              <h6 class="card-subtitle mb-2 text-muted py-2">Let's get to know each other.</h6>
+            <form action="/index" name="form1" method="POST">
+                <div class="form-inline d-flex">
+                  <div class="form-group d-block">
+                    <div class="col"><input class="rounded text-center" type="text" name="fName" id="fName" placeholder="First Name" required></div>
+                  </div>
+                  <div class="form-group d-block">
+                    <div class="col"><input class="smIn rounded text-center" type="text" name="mName" id="mName" placeholder="M"></div>
+                  </div>
+                  <div class="form-group d-block">
+                    <div class="col"><input class="rounded text-center" type="text" name="lName" id="lName" placeholder="Last Name" required></div>
+                  </div>
+                </div>
+             
+              <h6 class="card-subtitle text-muted pt-4 pb-1">What is your Name?</h6>
+              <div class="form-inline d-inline-flex pt-2">
+                <button type="submit" class="btn-dark mx-2">Go back</button>
+                <button id="kGoing" type="submit" class="btn-dark mx-2">Keep Going</button>
+              </div>
+            </form>           
+           </div>
+
+          </div> 
+         
+                  
+        </div>
+ 
+     
+        <% include partials/footer.ejs %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </html>

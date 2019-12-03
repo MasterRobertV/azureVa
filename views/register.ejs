@@ -1,0 +1,18 @@
+<% include partials/header.ejs %>
+
+<div class="container col-4 mx-auto">
+    <form action="/register" method="POST">
+        
+        <div class="form-group mt-2">
+            <input class="form-control" type="text" name="fName" placeholder="State your First Name,">
+            <input class="form-control mt-2" type="text" name="mName" placeholder=" Middle Name,">
+            <input class="form-control mt-2" type="text" name="lName" placeholder="Last Name,">
+            <input class="form-control mt-2" type="email" name="email" placeholder="and Email!">
+            <button class="form-control mt-2 btn btn-primary" type="submit">Sign Up</button>
+        </div>
+
+
+    </form>
+</div>
+
+<% include partials/footer.ejs %>

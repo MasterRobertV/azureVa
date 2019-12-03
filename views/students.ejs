@@ -1,0 +1,30 @@
+<% include partials/header.ejs %>
+<h1>Welcome Administrators</h1>
+<p>Here are our currently enrolled students</p>
+<div class="container">
+<table class="table table-light">
+        <thead class= "mainNav text-white">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">More Info</th>
+            </tr>
+            </thead>
+       
+<% for (let i = 0; i < students.length; i++) { %>
+     <tr scope="row">
+         <td class="border-bottom"><%= students[i].fName %></td>
+         <td class="border-bottom"><%= students[i].lName %></td>
+         <td class="border-bottom"><%= students[i].email %></td>
+         <td class="border-bottom">
+            <a href="/allstudents/<%= students[i]._id %>" class="btn btn-outline-info btn-sm">More Info</a>
+            <a href="/allstudents/<%= students[i]._id %>/edit" class="btn btn-outline-danger btn-sm ml-3">Remove</a>
+         </td>
+     </tr>
+      
+<% }; %>
+</table>
+</div>
+
+<% include partials/footer.ejs %>
